@@ -19,10 +19,6 @@ type CostAlertStackProps struct {
 	awscdk.StackProps
 }
 
-type AppStackProps struct {
-	awscdk.StackProps
-}
-
 type Dimensions struct {
 	Key          string   `json:"Key"`
 	Values       []int    `json:"Values"`
