@@ -74,7 +74,7 @@ func NewCostAlertStack(scope constructs.Construct, id string, props *CostAlertSt
 		NotificationsWithSubscribers: []awsbudgets.CfnBudget_NotificationWithSubscribersProperty{
 			{
 				Notification: awsbudgets.CfnBudget_NotificationProperty{
-					ComparisonOperator: jsii.String("EMAIL"),
+					ComparisonOperator: jsii.String(Gt),
 					NotificationType:   jsii.String("ACTUAL"),
 					Threshold:          jsii.Number(props.SpendAlertPercentThreshold),
 					ThresholdType:      jsii.String("PERCENTAGE"),
